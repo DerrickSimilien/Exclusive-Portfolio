@@ -70,7 +70,7 @@ line-height: 1;
 }
 
 .link__hover-effect--white:after {
-background-color: #ffff;
+background-color: #fff;
 }
 
 .link__hover-effect--black:after {
@@ -335,3 +335,8 @@ width: 70px;
     color: white;
     font-weight: 900;
 }
+
+.container {
+    padding: 50px 0;
+    width: 100%;
+    }
