@@ -149,7 +149,7 @@ animation: scroll 1000ms infinite alternate-reverse;
 
 @keyframes scroll {
     0% {
-       transform: translatelateY(3px):
+       transform: translatelateY(3px);
     }
 
     100% {
@@ -294,7 +294,7 @@ width: 70px;
 }
 
 
-.footer__social--link {
+.footer__social--list {
     width: 100%;
     max-width: 500px;
     display: flex;
