@@ -4,6 +4,20 @@
 
 // let isModalOpen = false;
 let contrastToggle = false;
+const scaleFactor = 1 / 20;
+
+function moveBackground(event) {
+   const shapes = document.querySelectorAll(".shape");
+   const x = event.clientX / 20;
+   const y = event.clientY / 20;
+  
+
+   for (let i = 0; i < shapes.length; ++i) {
+    const isOdd = i % 2 !== 0;
+    const boolInt = isOdd ? -1 : 1;
+    shapes[i].style.transform = 'translate(${x * boolInt}px, ${y * boolInt}px)'
+   }
+}
 
 function toggleContrast() {
     contrastToggle = !contrastToggle;
@@ -16,7 +30,9 @@ function toggleContrast() {
     }
 }
 
-function contact() {
+
+
+function contact(event) {
     event.preventDefault();
     const loading = document.querySelector('.modal__overlay--loading')
     const success = document.querySelector('.modal__overlay--success')
