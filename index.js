@@ -2,7 +2,7 @@
 // service_shu41ah
 // yymNb5FJCpQNrIp8E
 
-let isModalOpen = false;
+// let isModalOpen = false;
 let contrastToggle = false;
 
 function toggleContrast() {
@@ -10,7 +10,7 @@ function toggleContrast() {
     if (contrastToggle) {
     document.body.classList += " dark-theme"
     }
-    
+
     else {
         document.body.classList.remove("dark-theme") 
     }
