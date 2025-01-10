@@ -607,7 +607,7 @@ padding: 6% 0%;
 
 .footer__row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -727,6 +727,20 @@ width: 70px;
         .modal__half {
             padding: 40px;
         }
-
+        .footer__row {
+            flex-direction: column;
+        }
+        .header {
+            padding: 0 15px;
+        }
+        .header__para {
+            text-align: center;
+        }
+        .title {
+            text-align: center;
+        }
+        .social__list {
+            justify-content: center;
+        }
     }
     
