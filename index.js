@@ -14,7 +14,7 @@ function moveBackground(event) {
     // Added rotate after tutorial
     shapes[i].style.transform = `translate(${x * boolInt}px, ${
       y * boolInt
-    }px) rotate(${x  boolInt  10}deg)`;
+    }px) rotate(${x * boolInt * 10}deg)`;
   }
 }
 function toggleContrast() {
