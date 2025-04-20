@@ -697,25 +697,26 @@ width: 170px;
 
     /* Small phones, tablets, large smart phones */
     @media (max-width: 768px) {
-        .title {
-            font-size: 80px;
-        }
-        .header__para {
-            font-size: 20px;
-        }
-        .modal {
-            top: 0;
-            left: 0;
-            height: auto;
-            transform: none;
-            width: 100%;
-            flex-direction: column;
-            border-radius: 0;
-        }
-        .modal__half {
-            width: 100%;
-        }
+    .title {
+        font-size: 60px; /* Adjusted font size for tablets */
     }
+    .header__para {
+        font-size: 18px; /* Adjust paragraph font size */
+    }
+
+    .modal {
+        top: 0;
+        left: 0;
+        height: auto;
+        transform: none;
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0;
+    }
+    .modal__half {
+        width: 100%; /* Ensure modal takes full width on tablets */
+    }
+}
 
     /* Small phones */
     @media (max-width: 480px) {
