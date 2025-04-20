@@ -66,3 +66,19 @@ function toggleModal() {
   isModalOpen = true;
   document.body.classList += " modal--open";
 }
+
+
+
+function toggleContrast() {
+  contrastToggle = !contrastToggle;
+  
+  if (contrastToggle) {
+    document.body.classList += " dark-theme"; // Switch body to dark theme
+    const logo = document.getElementById("personal-logo");
+    logo.classList += " dark-mode"; // Add the dark mode class to the logo
+  } else {
+    document.body.classList.remove("dark-theme"); // Remove dark theme from body
+    const logo = document.getElementById("personal-logo");
+    logo.classList.remove("dark-mode"); // Remove the dark mode class from the logo
+  }
+}
