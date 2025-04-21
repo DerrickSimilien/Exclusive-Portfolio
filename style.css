@@ -698,10 +698,14 @@ width: 170px;
     /* Small phones, tablets, large smart phones */
     @media (max-width: 768px) {
     .title {
-        font-size: 60px; /* Adjusted font size for tablets */
+        font-size: 20px; /* Adjusted font size for tablets */
     }
     .header__para {
         font-size: 18px; /* Adjust paragraph font size */
+    }
+
+    .project__description--title {
+        font-size: 30px;
     }
 
     .modal {
@@ -716,6 +720,16 @@ width: 170px;
     .modal__half {
         width: 100%; /* Ensure modal takes full width on tablets */
     }
+
+    .project__description {
+        left: 20px; /* bring it closer to the edge */
+        width: calc(100% - 40px); /* adjust for smaller screen */
+        font-size: 14px; /* optionally reduce text size */
+      }
+    
+      .section__title {
+        font-size: 32px;
+      }
 }
 
     /* Small phones */
