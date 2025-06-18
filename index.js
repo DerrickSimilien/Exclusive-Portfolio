@@ -82,3 +82,6 @@ function toggleContrast() {
     logo.classList.remove("dark-mode"); // Remove the dark mode class from the logo
   }
 }
+
+
+
