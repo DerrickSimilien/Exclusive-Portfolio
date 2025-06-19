@@ -767,42 +767,7 @@ width: 170px;
     }
 
 
-    /* Small phones, tablets, large smart phones */
-    @media (max-width: 768px) {
-    .title {
-        font-size: 20px; /* Adjusted font size for tablets */
-    }
-    .header__para {
-        font-size: 18px; /* Adjust paragraph font size */
-    }
-
-    .project__description--title {
-        font-size: 30px;
-    }
-
-    .modal {
-        top: 0;
-        left: 0;
-        height: auto;
-        transform: none;
-        width: 100%;
-        flex-direction: column;
-        border-radius: 0;
-    }
-    .modal__half {
-        width: 100%; /* Ensure modal takes full width on tablets */
-    }
-
-    .project__description {
-        left: 20px; /* bring it closer to the edge */
-        width: calc(100% - 40px); /* adjust for smaller screen */
-        font-size: 14px; /* optionally reduce text size */
-      }
-    
-      .section__title {
-        font-size: 32px;
-      }
-}
+   
 
     /* Small phones */
     @media (max-width: 480px) {
@@ -847,3 +812,99 @@ width: 170px;
         }
     }
     
+    @media (max-width: 600px) {
+  .intro__image img {
+    width: 80%;   /* Adjust as needed */
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .intro__image {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .social__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+ /* Small phones, tablets, large smart phones */
+    @media (max-width: 768px) {
+    .title {
+        font-size: 20px; /* Adjusted font size for tablets */
+    }
+    .header__para {
+        font-size: 18px; /* Adjust paragraph font size */
+    }
+
+    .project__description--title {
+        font-size: 30px;
+    }
+
+    .modal {
+        top: 0;
+        left: 0;
+        height: auto;
+        transform: none;
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0;
+    }
+    .modal__half {
+        width: 100%; /* Ensure modal takes full width on tablets */
+    }
+
+    .project__description {
+        left: 20px; /* bring it closer to the edge */
+        width: calc(100% - 40px); /* adjust for smaller screen */
+        font-size: 14px; /* optionally reduce text size */
+      }
+    
+      .section__title {
+        font-size: 32px;
+      }
+
+     .intro__image img {
+    width: 90%;
+    max-width: 350px;  /* enlarge from 280px */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .intro__image {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-top: -135px;
+  }
+
+    .intro__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* center vertically */
+    min-height: 90vh; /* push everything toward center */
+    padding: 2rem 1rem;
+    gap: 2rem;
+    text-align: center;
+  }
+
+   .header__content {
+    margin-top: 0;
+  }
+
+   .social__list {
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+}
+
